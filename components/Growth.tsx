@@ -2,7 +2,7 @@
 
 export default function Growth(){
     return(
-    <div>
+    <div className="mx-[200px]">
         <div>
         {/* GROWTH  */}
         <div className="grid grid-cols-12 gap-[20px]">

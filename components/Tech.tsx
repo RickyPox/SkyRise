@@ -2,7 +2,7 @@
 
 export default function Tech(){
     return(
-    <div>
+    <div className="mx-[200px]">
         <div>
         {/* Identity  */}
         <div className="grid grid-cols-12 gap-[20px]">

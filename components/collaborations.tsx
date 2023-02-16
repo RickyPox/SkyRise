@@ -23,8 +23,8 @@ const images = [
 export default function Collaborations(){
     
     return(
-        <div className='flex flex-col mt-[400px]'>
-            <h1 className='text-center text-white collaborations'>Collaborations</h1>
+        <div className='flex flex-col mt-[400px] mx-[200px]'>
+            <h1 className='text-center text-white collaborations'>Our Reaches</h1>
             <div className="grid grid-cols-5 justify-items-center mt-[100px]">
                 {images.map((image, index) =>  (
                     <img className="h-[30px] mb-[50px]" src={image.src} />

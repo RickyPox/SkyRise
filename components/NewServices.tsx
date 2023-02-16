@@ -1,34 +1,91 @@
 
 import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Controller, Scene } from "react-scrollmagic";
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import Growth from "./Growth";
 import Identity from "./Identity";
 import Tech from "./Tech";
 import { useEffect, useRef } from 'react';
+gsap.registerPlugin(ScrollTrigger)
 
-gsap.registerPlugin(ScrollTrigger);
 export default function NewServices(){
-  const ref = useRef(null);
+  const scroller = useRef(null);
+  const titletrigger =useRef(null)
 
   useEffect(() => {
-    gsap.to(ref.current, {
+    let servicesSet = gsap.utils.toArray('.skill-set');
+    let servicesTitle = document.querySelectorAll(".services_title")
+    let to = gsap.to(servicesSet, {
+      xPercent: () => -100 * (servicesSet.length - 1),
+      ease: 'none',
       scrollTrigger: {
-        trigger: ref.current,
-        start: 'top center',
-        end: 'bottom center',
-        scrub: true,
+        trigger: scroller.current,
         pin: true,
-        markers: {startColor: "green", endColor: "red", fontSize: "12px"},
+        pinSpacing: true,
+        scrub: 1,
+        snap: {
+          snapTo: 1 / (servicesSet.length - 1),
+          duration: 0.1,
+          delay: 0.1,
+          ease: "none"},
+        end: () => '+=' + window.innerWidth,
       },
-      x: -500,
-      duration: 2,
     });
+    
+
+    let titleanimation = gsap.fromTo(servicesTitle,
+      {x:window.innerWidth},{x:0,
+      scrollTrigger:
+      {
+      trigger: titletrigger.current,
+      scrub: 1,
+      markers: {startColor: "green", endColor: "red", fontSize: "12px"},
+      start:"top 50%",
+
+
+    },});
+
+
+    return () => {
+      to.kill();
+    };
   }, []);
 
   return (
-    <div ref={ref}>
-      <Growth></Growth>
+    <div className='mt-[400px]'>
+      <h1 ref={titletrigger} className='services_title text-white mx-[200px] overflow-x-hidden'>Our services</h1>
+      <div className="overflow-hidden flex">
+        <div className="overflow-hidden ">
+          <div
+            id="services"
+            ref={scroller}
+            className=" flex overflow-x-hidden text-white w-[400vw] m-0 relative h-screen"
+          >
+          <section
+
+              className="skill-set px-12 w-screen h-full bg-transparent ns-horizontal-section__item flex items-center z-50"
+            >
+            </section>
+            <section
+
+              className="skill-set px-12 w-screen h-full bg-transparent ns-horizontal-section__item flex items-center z-50"
+            >
+              <Growth/>
+            </section>
+            <section
+
+              className="skill-set px-12 w-screen h-full bg-transparent ns-horizontal-section__item flex items-center z-50"
+            >
+              <Identity/>
+            </section>
+            <section
+
+              className="skill-set px-12 w-screen h-full bg-transparent ns-horizontal-section__item flex items-center z-50"
+            >
+              <Tech/>
+            </section>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

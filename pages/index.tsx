@@ -6,13 +6,13 @@ import Contact from '../components/contact'
 import Mouse from '../components/mouse'
 import Navbar from '../components/navbar'
 import NewServices from '../components/NewServices'
-import OurMission from '../components/ourmission'
+import WhoWeAre from '../components/WhoWeAre'
 
 import SkyRise from '../components/skyrise'
 
 const Home: NextPage = () => {
   return (
-    <div className='mx-[200px] my-[100px]'>
+    <div className='my-[100px]'>
       <Head>
         <title>SkyRiseLabs</title>
         <link rel="icon" href="/favicon.svg" />
@@ -20,7 +20,7 @@ const Home: NextPage = () => {
       </Head>
       <Navbar></Navbar>
       <SkyRise></SkyRise>
-      <OurMission></OurMission>
+      <WhoWeAre></WhoWeAre>
       <NewServices></NewServices>
       <Collaborations></Collaborations>
       <Contact></Contact>
