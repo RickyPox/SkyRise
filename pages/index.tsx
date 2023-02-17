@@ -9,24 +9,52 @@ import NewServices from '../components/NewServices'
 import WhoWeAre from '../components/WhoWeAre'
 import SkyRise from '../components/skyrise'
 import Growth from '../components/Growth'
+import { useEffect, useState } from 'react'
 
 
 const Home: NextPage = () => {
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading (true)
+    setTimeout (() =>{
+      setLoading(false)
+    },3000)
+  }, [])
+
+
+
+  
   return (
-    <div>
+    <div className='overflow-x-hidden'>
+
       <Head>
         <title>SkyRiseLabs</title>
         <link rel="icon" href="/favicon.svg" />
         <link rel="stylesheet" href="https://use.typekit.net/edg0nsn.css"/>
       </Head>
+      {
+      loading ? 
+      <div className='w-screen h-screen flex' >
+        <video className="w-screen h-screen" autoPlay muted id="LoadVideo" src="/loadingvideo.mp4"></video>
+      </div>
+    
+      :
 
+      <div>
       <Navbar></Navbar>
       <SkyRise></SkyRise>
       <WhoWeAre></WhoWeAre>
-      {/* <NewServices></NewServices> */}
+      <NewServices></NewServices>
       <Collaborations></Collaborations>
       <Contact></Contact>
-      <Mouse></Mouse>
+      <div className='hidden md:block'>
+        <Mouse></Mouse>
+      </div>
+      </div>
+    }
+      
+
 
     </div>
   )

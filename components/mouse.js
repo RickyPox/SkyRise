@@ -13,7 +13,7 @@ export default function Mouse(){
 
 
     useEffect(() => {
-        const mouseMove = (e: any) => {
+        const mouseMove = (e) => {
             setMousePosition({
                 x: e.clientX,
                 y: e.clientY
@@ -30,8 +30,7 @@ const variants={
     default: {
         x: mousePosition.x - 8,
         y: mousePosition.y - 8,
-        mixBlendMode: "difference",
-
+        mixBlendMode: "difference"
     },
 
 }
@@ -40,7 +39,7 @@ const variants={
         transition={{
             duration: 0,
             bounce: 0
-          }}
+        }}
         variants={variants}
         animate={cursorVariant}
         

@@ -20,7 +20,7 @@ return (
 <Disclosure as="nav">
     {({ open }) => (
     <>
-        <div className="mx-4 md:mx-[75px] xl:mx-[200px]">
+        <div className="mx-4 md:mx-[75px] xl:mx-[200px] pt-[100px]">
         <div className="relative flex h-16 items-center justify-between">
             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* Mobile menu button*/}
@@ -39,7 +39,7 @@ return (
             <div className="flex flex-shrink-0 items-center">
 
                 <img
-                className="hidden h-8 w-auto lg:block"
+                className="hidden h-8 w-auto sm:block"
                 src="/skyriselogo.svg"
                 alt="SkyRise"
                 />

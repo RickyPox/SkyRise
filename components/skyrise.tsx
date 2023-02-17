@@ -9,13 +9,15 @@ return(
             <TypeAnimation
                 // Same String at the start will only be typed once, initially
                 sequence={[
-                'We Build',
+                'We Rise it',
                 1000,
-                'We Rise',
+                'We Build it',
                 1000,
-                'We Brand',
+                'We Grow it',
                 1000,
-                'We Solve',
+                'We Brand it',
+                1000,
+                'We Accelerate it',
                 1000,
                 ]}
                 speed={40} // Custom Speed from 1-99 - Default Speed: 40
