@@ -26,7 +26,7 @@ return(
             </div>
         </div>
         <div className='flex justify-center'>
-            <button className='text-white text-[26px] p-[10px] rounded-[20px] border-[1px] border-white mt-[30px]'>Make me Rise</button>
+            <button className='text-white text-[18px] p-[10px] rounded-[20px] border-[1px] border-white mt-[30px]'>Make me Rise</button>
         </div>
     </div>
 )

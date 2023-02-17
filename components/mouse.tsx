@@ -30,6 +30,7 @@ const variants={
     default: {
         x: mousePosition.x - 8,
         y: mousePosition.y - 8,
+        mixBlendMode: "difference",
 
     },
 

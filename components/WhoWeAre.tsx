@@ -1,6 +1,11 @@
+import Slider from "./slider";
+
 export default function WhoWeAre(){
     return(
-        <div className="grid grid-cols-12 mx-[200px]">
+        <div>
+
+        <div className="grid grid-cols-12 gap-[20px] mx-[200px] mb-[50px]">
+
             <div className="col-span-5">
                 <h1 className="text-white mission">Who we are</h1>
                 <div className="mt-[60px]">
@@ -33,6 +38,8 @@ export default function WhoWeAre(){
                     </p>
                 </div>
             </div>
+            </div>
+            <Slider></Slider>
         </div>
     )
 }

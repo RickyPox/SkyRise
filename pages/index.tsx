@@ -7,8 +7,9 @@ import Mouse from '../components/mouse'
 import Navbar from '../components/navbar'
 import NewServices from '../components/NewServices'
 import WhoWeAre from '../components/WhoWeAre'
-
 import SkyRise from '../components/skyrise'
+import Growth from '../components/Growth'
+
 
 const Home: NextPage = () => {
   return (
@@ -18,6 +19,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.svg" />
         <link rel="stylesheet" href="https://use.typekit.net/edg0nsn.css"/>
       </Head>
+
       <Navbar></Navbar>
       <SkyRise></SkyRise>
       <WhoWeAre></WhoWeAre>
@@ -25,6 +27,7 @@ const Home: NextPage = () => {
       <Collaborations></Collaborations>
       <Contact></Contact>
       <Mouse></Mouse>
+
     </div>
   )
 }

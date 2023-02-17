@@ -32,7 +32,8 @@
   }
 
 *{
-  cursor:none
+  cursor:none;
+  border: solid 1px red;
 }
 
   .navbar{
@@ -49,14 +50,12 @@
     font-family: "elza", sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 150px;
   }
 
   p{
     font-family: "elza", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 26px;
   }
 
   .mission::before{
