@@ -51,8 +51,8 @@ export default function NewServices(){
   }, []);
 
   return (
-    <div className='mt-[400px]'>
-      <h1 ref={titletrigger} className='services_title text-white mx-[200px] overflow-x-hidden '>Our services</h1>
+    <div className='mt-[400px] mx-4 '>
+      <h1 ref={titletrigger} className='services_title text-white mx-4 xl:mx-[200px] overflow-x-hidden text-[40px] lg:text-[60px] xl:text-[68px] '>Our services</h1>
       <div className="overflow-hidden flex">
         <div className="overflow-hidden ">
           <div

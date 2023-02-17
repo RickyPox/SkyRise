@@ -13,7 +13,7 @@ import Growth from '../components/Growth'
 
 const Home: NextPage = () => {
   return (
-    <div className='my-[100px]'>
+    <div>
       <Head>
         <title>SkyRiseLabs</title>
         <link rel="icon" href="/favicon.svg" />
@@ -23,7 +23,7 @@ const Home: NextPage = () => {
       <Navbar></Navbar>
       <SkyRise></SkyRise>
       <WhoWeAre></WhoWeAre>
-      <NewServices></NewServices>
+      {/* <NewServices></NewServices> */}
       <Collaborations></Collaborations>
       <Contact></Contact>
       <Mouse></Mouse>

@@ -33,7 +33,6 @@
 
 *{
   cursor:none;
-  border: solid 1px red;
 }
 
   .navbar{
@@ -44,7 +43,6 @@
 
   h1{
     font-family: "NeueMachina-Regular";
-    font-size: 68px;
   }
   h2{
     font-family: "elza", sans-serif;

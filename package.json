@@ -7,6 +7,8 @@
     "deploy": "yarn build && npx next export && firebase deploy --only hosting"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.11",
+    "@heroicons/react": "^2.0.16",
     "framer-motion": "^9.0.2",
     "gsap": "^3.11.4",
     "next": "^13.1.6",

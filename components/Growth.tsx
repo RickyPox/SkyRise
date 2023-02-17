@@ -3,7 +3,7 @@
 export default function Growth(){
     return(
 
-        <div className="xl:mx-[200px] mx-4">
+        <div className="mx-4 xl:mx-[200px]">
         {/* GROWTH  */}
         <div>
             <div>
