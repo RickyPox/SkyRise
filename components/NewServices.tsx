@@ -36,14 +36,10 @@ export default function NewServices(){
     { name:'Tech', component: <Tech/> },
   ];
   
-  type services= {
-    name: string; 
-    component: JSX.Element;
-  }
-  
-  const [selectedService, setSelectedService] = useState<{name: null | string, component: null | JSX.Element}>({ name: null, component: null });
 
-  const selectService = (service: services) => {
+  const [selectedService, setSelectedService] = useState({ name: null, component: null });
+
+  const selectService = (service: any) => {
     setSelectedService(service);
   };
   
