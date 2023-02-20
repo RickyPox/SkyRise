@@ -7,7 +7,7 @@ export default function Tech(){
         {/* TECH  */}
         <div>
             <div>
-                <h2 className="text-white text-[60px] md:text-[120px] xl:text-[150px]">Tech</h2>
+                <h2 className="text-white text-[60px] md:text-[120px] xl:text-[150px] xl:mb-[20px]">Tech</h2>
                 <p className="text-white md:-mt-[50px] text-[12px] md:text-[22px] ">Tech is aimed to pushing boundaries of innovation</p>
             </div>
 

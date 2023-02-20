@@ -46,7 +46,6 @@ const Home: NextPage = () => {
       <SkyRise></SkyRise>
       <WhoWeAre></WhoWeAre>
       <NewServices></NewServices>
-      <Collaborations></Collaborations>
       <Contact></Contact>
       <div className='hidden md:block'>
         <Mouse></Mouse>

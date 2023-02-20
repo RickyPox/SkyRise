@@ -7,7 +7,7 @@ export default function Identity(){
         {/* IDENTITY  */}
         <div>
             <div>
-                <h2 className="text-white text-[60px] md:text-[120px] xl:text-[150px]">Identity</h2>
+                <h2 className="text-white text-[60px] md:text-[120px] xl:text-[150px] xl:mb-[20px]">Identity</h2>
                 <p className="text-white md:-mt-[50px] text-[12px] md:text-[22px] ">Identity is aimed to make a distinguishable and remarkable brands</p>
             </div>
 

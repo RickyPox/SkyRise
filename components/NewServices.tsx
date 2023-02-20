@@ -1,34 +1,10 @@
 
-import { gsap } from 'gsap';
-import { ScrollTrigger} from 'gsap/dist/ScrollTrigger';
-import {ScrollToPlugin} from 'gsap/dist/ScrollToPlugin';
 import Growth from "./Growth";
 import Identity from "./Identity";
 import Tech from "./Tech";
 import { useEffect, useRef, useState } from 'react';
-gsap.registerPlugin(ScrollTrigger);
-gsap.registerPlugin(ScrollToPlugin);
 
-
-
-
-
-export default function NewServices(){
-  const titletrigger =useRef(null)
-  
-  useEffect(() => {
-    let servicesTitle = document.querySelectorAll(".services_title")
-
-    let titleanimation = gsap.fromTo(servicesTitle,
-      {x:window.innerWidth},{x:0,
-      scrollTrigger:
-      {
-      trigger: titletrigger.current,
-      scrub: 1,
-      start:"top 50%",
-      end:"bottom 30%",
-    },});
-  }, []);
+export default function NewServices(){ 
 
   const services = [
     { name:'Growth', component: <Growth/> },
@@ -36,24 +12,22 @@ export default function NewServices(){
     { name:'Tech', component: <Tech/> },
   ];
   
-
-  const [selectedService, setSelectedService] = useState({ name: null, component: null });
-
+  const [selectedService, setSelectedService] = useState({ name: "Growth", component: <Growth/> });
   const selectService = (service: any) => {
     setSelectedService(service);
   };
   
-
   return (
-    <div className="flex flex-col">
-      <div className="flex justify-center space-x-4">
-
+    <div className="flex flex-col mt-[100px]">
+      <div></div>
+      <h1 className='services_title text-white mx-[200px] overflow-x-hidden text-[40px] lg:text-[60px] xl:text-[68px] mb-[50px]'>Our services</h1>
+      <div className="flex justify-center space-x-4 md:space-x-8 mb-[40px] lg:mb-[100px]">
         {services.map((service) => (
           <button
             onClick={() => selectService(service)}
             
-            className={`px-4 py-2 rounded ${
-              selectedService.name == service.name ? 'bg-blue-500 text-white' : 'bg-black text-white' }`}
+            className={`rounded-full font-[Elza] text-[12px] w-[75px] md:text-[26px] md:w-[180px] xl:text-[] ${
+              selectedService.name == service.name ? 'bg-white text-black scale-125' : 'bg-transparent text-white border border-black py-[5px]'}`}
           >
             {service.name}
           </button>

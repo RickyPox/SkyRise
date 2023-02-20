@@ -19,15 +19,15 @@ export default function Example() {
 return (
 <Disclosure as="nav">
     {({ open }) => (
-    <>
-        <div className="mx-4 md:mx-[75px] xl:mx-[200px] pt-[100px]">
-        <div className="relative flex h-16 items-center justify-between">
+    <>  
+        <div className="pt-[50px] top-0 absolute w-full">
+        <div className="relative flex h-16 items-center justify-between mx-4 md:mx-[75px] xl:mx-[200px]">
             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* Mobile menu button*/}
-            <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-white hover:bg-gray-700 hover:text-white">
+            <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-white">
                 <span className="sr-only">Open main menu</span>
                 {open ? (
-                <XMarkIcon className="block h-[50px] w-[50px]" aria-hidden="true" onClick={() => setIsShown(!isShown)} />
+                <XMarkIcon className="block h-[50px] w-[50px] z-50" aria-hidden="true" onClick={() => setIsShown(!isShown)} />
                 ) : (
                 <Bars3Icon className="block h-[50px] w-[50px]" aria-hidden="true" onClick={() => setIsShown(!isShown)} />
                 )}
@@ -45,7 +45,7 @@ return (
                 />
             </div>
             <div className="hidden sm:ml-6 sm:block">
-                <div className="flex space-x-[20px]">
+                <div className="flex space-x-[50px]">
                 {navigation.map((item) => (
                     <a
                     key={item.name}
@@ -73,7 +73,7 @@ return (
             leaveFrom=" scale-100"
             leaveTo="scale-0">
                 
-                <Disclosure.Panel className="sm:hidden w-screen h-screen absolute">
+                <Disclosure.Panel className="sm:hidden w-screen h-screen absolute pt-[50px]">
         <div className="flex flex-col space-y-[50px] px-2 pt-2 pb-3 justify-start items-center h-screen backdrop-blur-3xl">
             <div className='flex'>
             <img
@@ -102,9 +102,10 @@ return (
         </Disclosure.Panel>
 
             </Transition>
-        
     </>
+    
     )}
+    
 </Disclosure>
 )
 }

@@ -3,15 +3,15 @@
 export default function Growth(){
     return(
 
-        <div className="mx-4 xl:mx-[200px]">
+        <div className="mx-4 lg:mx-[60px] md:mx-[40px] xl:mx-[200px]">
         {/* GROWTH  */}
         <div>
             <div>
-                <h2 className="text-white text-[60px] md:text-[120px] xl:text-[150px]">Growth</h2>
+                <h2 className="text-white text-[60px] md:text-[120px] xl:text-[150px] xl:mb-[20px]">Growth</h2>
                 <p className="text-white md:-mt-[50px] text-[12px] md:text-[22px] ">Growth is aimed to help you scale in web3</p>
             </div>
 
-            <div className="md:flex md:space-x-[20px]">
+            <div className="md:flex md:space-x-[60px] justify-center">
                 {/* STRATEGIC PARTNERSHIP  */}
                 <div className="flex items-start mt-[50px] md:w-1/2">
                     <div className="p-[12px] rounded-[7px] bg-white"> 
@@ -30,7 +30,7 @@ export default function Growth(){
                 </div>
 
                 {/* WEB3 STRATEGY */}
-                <div className="flex items-start mt-[50px] md:w-1/2 ">
+                <div className="flex items-start mt-[50px] md:w-1/2">
                     <div className="p-[12px] rounded-[7px] bg-white"> 
                         <img  src="/web.svg" />
                     </div>
@@ -47,7 +47,7 @@ export default function Growth(){
             </div>
 
             {/* LEGAL SETUP */}
-            <div className="md:flex md:space-x-[20px]">
+            <div className="md:flex md:space-x-[60px]">
                 <div className="flex items-start mt-[50px] md:w-1/2">
                     <div className="p-[12px] rounded-[7px] bg-white"> 
                         <img  src="/legalsetup.svg" />

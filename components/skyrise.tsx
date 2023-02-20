@@ -2,10 +2,9 @@ import { TypeAnimation } from "react-type-animation"
 
 export default function SkyRise(){
 return(
-    <div className='min-h-screen pt-[360px] flex flex-col items-center mx-4 md:mx-[75px] xl:mx-[200px]'>
-        <div className="flex flex-col xl:flex-row items-start xl:items-center">
-        <img src="/skyrisenamedlogo.svg" className=''></img>
-        <div className="ml-[40px]">
+    <div className='min-h-screen flex flex-col items-center mx-4 md:mx-[75px] xl:mx-[200px] justify-center'>
+        <img src="/skyrisenamedlogo.svg" ></img>
+            <div className="mt-[50px]">
             <TypeAnimation
                 // Same String at the start will only be typed once, initially
                 sequence={[
@@ -27,10 +26,8 @@ return(
                 cursor={false}
                 />
             </div>
+            <button className='text-white text-[18px]  px-[40px] py-[15px] rounded-[20px] border-[1px] border-white mt-[30px] mt-[120px]'>Make me Rise</button>
         </div>
-        <div className='flex justify-center'>
-            <button className='text-white text-[18px]  px-[40px] py-[15px] rounded-[20px] border-[1px] border-white mt-[30px]'>Make me Rise</button>
-        </div>
-    </div>
+
 )
 }
