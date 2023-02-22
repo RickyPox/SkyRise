@@ -10,23 +10,24 @@ import WhoWeAre from '../components/WhoWeAre'
 import SkyRise from '../components/skyrise'
 import Growth from '../components/Growth'
 import { useEffect, useState } from 'react'
+import About from '../components/WhoWeAre'
 
 
 const Home: NextPage = () => {
   const [loading, setLoading] = useState(false);
 
-  useEffect(() => {
+  /* useEffect(() => {
     setLoading (true)
     setTimeout (() =>{
       setLoading(false)
     },3000)
-  }, [])
+  }, []) */
 
 
 
   
   return (
-    <div className='overflow-x-hidden'>
+    <div>
 
       <Head>
         <title>SkyRiseLabs</title>
@@ -44,7 +45,7 @@ const Home: NextPage = () => {
       <div>
       <Navbar></Navbar>
       <SkyRise></SkyRise>
-      <WhoWeAre></WhoWeAre>
+      <About></About>
       <NewServices></NewServices>
       <Contact></Contact>
       <div className='hidden md:block'>
