@@ -35,7 +35,7 @@ const variants={
 
 }
     return(
-        <motion.div className="bg-white h-[16px] w-[16px] rounded-[50%] fixed top-0 left-0 pointer-events-none"
+        <motion.div className="bg-white h-[16px] w-[16px] rounded-[50%] fixed top-0 left-0 pointer-events-none z-50"
         transition={{
             duration: 0,
             bounce: 0

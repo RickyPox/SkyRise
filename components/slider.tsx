@@ -4,27 +4,27 @@ import Marquee from "react-fast-marquee";
 
 const carousel  = [
     {
-        imgsrc: "/react.svg"
+        imgsrc: "/cardinal.png"
     },
     {
-        imgsrc: "/react.svg"
+        imgsrc: "/brave.png"
     },
     {
-        imgsrc: "/react.svg"
+        imgsrc: "/magicEden.png"
     },
     {
-        imgsrc: "/react.svg"
+        imgsrc: "/solana.png"
     },
     {
-        imgsrc: "/react.svg"
+        imgsrc: "/svc.png"
     },
 ]
 export default function Slider(){
     return(
-    <div>        
-        <Marquee className='h-[70px] mb-[0px]'
+    <div>     
+        <Marquee className='h-[200px] mb-[0px] bg-primary '
             gradient={false}
-            speed={40}>
+            speed={100}>
                 <div className='flex flex-row justify-around w-full'>
                     {carousel.map((image) =>  (
                         <div>

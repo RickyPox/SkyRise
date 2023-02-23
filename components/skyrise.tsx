@@ -26,7 +26,7 @@ return(
                 cursor={false}
                 />
             </div>
-            <button className='text-white text-[18px]  px-[40px] py-[15px] rounded-[20px] border-[1px] border-white mt-[30px] mt-[120px]'>Make me Rise</button>
+            <button className='text-primary text-[18px]  px-[40px] py-[15px] rounded-[20px] border-[1px] border-white mt-[30px] mt-[120px]'>Make me Rise</button>
         </div>
 
 )

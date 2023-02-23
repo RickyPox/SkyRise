@@ -7,8 +7,8 @@ export default function Tech(){
         {/* TECH  */}
         <div>
             <div>
-                <h2 className="text-white text-[60px] md:text-[120px] xl:text-[150px] xl:mb-[20px]">Tech</h2>
-                <p className="text-white md:-mt-[50px] text-[12px] md:text-[22px] ">Tech is aimed to pushing boundaries of innovation</p>
+                <h2 className="text-primary text-[60px] md:text-[120px] xl:text-[150px] xl:mb-[20px]">Tech</h2>
+                <p className="text-primary md:-mt-[50px] text-[12px] md:text-[22px] ">Tech is aimed to pushing boundaries of innovation</p>
             </div>
 
             <div className="md:flex md:space-x-[20px]">
@@ -18,8 +18,8 @@ export default function Tech(){
                         <img className="max-w-none"  src="/web3development.svg" />
                     </div>
                     <div className="ml-[20px]">
-                    <p className="text-white text-[16px] xl:text-[26px] md:text-[22px] font-semibold">Web 3 Development</p>
-                    <p className="text-white text-[12px] md:text-[16px] md:leading-[30px] mt-[10px]"> 
+                    <p className="text-primary text-[16px] xl:text-[26px] md:text-[22px] font-semibold">Web 3 Development</p>
+                    <p className="text-primary text-[12px] md:text-[16px] md:leading-[30px] mt-[10px]"> 
                         Custom Web3 Platform/Tooling <br></br>
                         Mint website creation <br></br>
                         Art generation support <br></br>
@@ -34,8 +34,8 @@ export default function Tech(){
                         <img  src="/web.svg" />
                     </div>
                     <div className="ml-[20px]">
-                    <p className="text-white text-[16px] xl:text-[26px] md:text-[22px] font-semibold">Recruitment</p>
-                    <p className="text-white text-[12px] md:text-[16px] md:leading-[30px] mt-[10px]"> 
+                    <p className="text-primary text-[16px] xl:text-[26px] md:text-[22px] font-semibold">Recruitment</p>
+                    <p className="text-primary text-[12px] md:text-[16px] md:leading-[30px] mt-[10px]"> 
                         Talent Scouting <br></br>
                         In-house/Outsourced
                     </p>
@@ -50,8 +50,8 @@ export default function Tech(){
                         <img  src="/legalsetup.svg" />
                     </div>
                     <div className="ml-[20px]">
-                    <p className="text-white text-[16px] xl:text-[26px] md:text-[22px] font-semibold">Tech Partnerships</p>
-                    <p className="text-white text-[12px] md:text-[16px] md:leading-[30px] mt-[10px]"> 
+                    <p className="text-primary text-[16px] xl:text-[26px] md:text-[22px] font-semibold">Tech Partnerships</p>
+                    <p className="text-primary text-[12px] md:text-[16px] md:leading-[30px] mt-[10px]"> 
                         Introduction to other Protocols and Tech partners
                     </p>
                     </div>

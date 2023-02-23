@@ -7,8 +7,8 @@ export default function Identity(){
         {/* IDENTITY  */}
         <div>
             <div>
-                <h2 className="text-white text-[60px] md:text-[120px] xl:text-[150px] xl:mb-[20px]">Identity</h2>
-                <p className="text-white md:-mt-[50px] text-[12px] md:text-[22px] ">Identity is aimed to make a distinguishable and remarkable brands</p>
+                <h2 className="text-primary text-[60px] md:text-[120px] xl:text-[150px] xl:mb-[20px]">Identity</h2>
+                <p className="text-primary md:-mt-[50px] text-[12px] md:text-[22px] ">Identity is aimed to make a distinguishable and remarkable brands</p>
             </div>
 
             <div className="md:flex md:space-x-[20px]">
@@ -18,8 +18,8 @@ export default function Identity(){
                         <img className="max-w-none"  src="/branding.svg" />
                     </div>
                     <div className="ml-[20px]">
-                    <p className="text-white text-[16px] xl:text-[26px] md:text-[22px] font-semibold">Branding Process</p>
-                    <p className="text-white text-[12px] md:text-[16px] md:leading-[30px] mt-[10px]"> 
+                    <p className="text-primary text-[16px] xl:text-[26px] md:text-[22px] font-semibold">Branding Process</p>
+                    <p className="text-primary text-[12px] md:text-[16px] md:leading-[30px] mt-[10px]"> 
                         Personalized series of branding workshops <br></br>
                         Consumer deep dive <br></br>
                         Personalized Color scheme, Typography, Moodboard concepts creation
@@ -33,8 +33,8 @@ export default function Identity(){
                         <img  src="/web.svg" />
                     </div>
                     <div className="ml-[20px]">
-                    <p className="text-white text-[16px] xl:text-[26px] md:text-[22px] font-semibold">Web Design</p>
-                    <p className="text-white text-[12px] md:text-[16px] md:leading-[30px] mt-[10px]"> 
+                    <p className="text-primary text-[16px] xl:text-[26px] md:text-[22px] font-semibold">Web Design</p>
+                    <p className="text-primary text-[12px] md:text-[16px] md:leading-[30px] mt-[10px]"> 
                         Competitive Analysis <br></br>
                         Specifications consultation <br></br>
                         UI/UX research <br></br>
@@ -52,8 +52,8 @@ export default function Identity(){
                         <img  src="/assets.svg" />
                     </div>
                     <div className="ml-[20px]">
-                    <p className="text-white text-[16px] xl:text-[26px] md:text-[22px] font-semibold">Assets Development</p>
-                    <p className="text-white text-[12px] md:text-[16px] md:leading-[30px] mt-[10px]"> 
+                    <p className="text-primary text-[16px] xl:text-[26px] md:text-[22px] font-semibold">Assets Development</p>
+                    <p className="text-primary text-[12px] md:text-[16px] md:leading-[30px] mt-[10px]"> 
                         Personalized Branding Book <br></br>
                         Personalized Brand Voice Book <br></br>
                         Social media assets <br></br>

@@ -24,7 +24,7 @@ return (
         <div className="relative flex h-16 items-center justify-between mx-4 md:mx-[75px] xl:mx-[200px]">
             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* Mobile menu button*/}
-            <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-white">
+            <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-primary">
                 <span className="sr-only">Open main menu</span>
                 {open ? (
                 <XMarkIcon className="block h-[50px] w-[50px] z-50" aria-hidden="true" onClick={() => setIsShown(!isShown)} />
@@ -50,7 +50,7 @@ return (
                     <a
                     key={item.name}
                     href={item.href}
-                    className='font-[Elza] text-white text-[16px]'
+                    className='font-[Elza] text-primary text-[16px]'
                     >
                     {item.name}
                     </a>
@@ -58,7 +58,7 @@ return (
                 </div>
             </div>
             <div className='sm:block hidden'>   
-                <a className='font-[Elza] text-white text-[16px]'>Contacts</a>
+                <a className='font-[Elza] text-primary text-[16px]'>Contacts</a>
             </div>   
             </div>
         
@@ -87,7 +87,7 @@ return (
                 key={item.name}
                 as="a"
                 href={item.href}
-                className='font-[Elza] text-white text-[16px]'
+                className='font-[Elza] text-primary text-[16px]'
             >
                 {item.name}
                 
@@ -95,7 +95,7 @@ return (
             ))}
             <Disclosure.Button>
             <div className='sm:hidden block'>   
-                <a className='font-[Elza] text-white text-[16px]'>Contacts</a>
+                <a className='font-[Elza] text-primary text-[16px]'>Contacts</a>
             </div>
             </Disclosure.Button>
         </div>

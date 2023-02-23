@@ -11,6 +11,7 @@ import SkyRise from '../components/skyrise'
 import Growth from '../components/Growth'
 import { useEffect, useState } from 'react'
 import About from '../components/WhoWeAre'
+import Slider from '../components/slider'
 
 
 const Home: NextPage = () => {
@@ -46,6 +47,7 @@ const Home: NextPage = () => {
       <Navbar></Navbar>
       <SkyRise></SkyRise>
       <About></About>
+      <Slider></Slider>
       <NewServices></NewServices>
       <Contact></Contact>
       <div className='hidden md:block'>

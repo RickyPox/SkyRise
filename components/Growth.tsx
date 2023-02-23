@@ -7,8 +7,8 @@ export default function Growth(){
         {/* GROWTH  */}
         <div>
             <div>
-                <h2 className="text-white text-[60px] md:text-[120px] xl:text-[150px] xl:mb-[20px]">Growth</h2>
-                <p className="text-white md:-mt-[50px] text-[12px] md:text-[22px] ">Growth is aimed to help you scale in web3</p>
+                <h2 className="text-primary text-[60px] md:text-[120px] xl:text-[150px] xl:mb-[20px]">Growth</h2>
+                <p className="text-primary md:-mt-[50px] text-[12px] md:text-[22px] ">Growth is aimed to help you scale in web3</p>
             </div>
 
             <div className="md:flex md:space-x-[60px] justify-center">
@@ -18,8 +18,8 @@ export default function Growth(){
                         <img className="max-w-none"  src="/strategicpartner.svg" />
                     </div>
                     <div className="ml-[20px]">
-                    <p className="text-white text-[16px] xl:text-[26px] md:text-[22px] font-semibold">Strategic Partnerships / Marketing</p>
-                    <p className="text-white text-[12px] md:text-[16px] md:leading-[30px] mt-[10px]"> Strategic introductions to ecosystem projects <br></br>
+                    <p className="text-primary text-[16px] xl:text-[26px] md:text-[22px] font-semibold">Strategic Partnerships / Marketing</p>
+                    <p className="text-primary text-[12px] md:text-[16px] md:leading-[30px] mt-[10px]"> Strategic introductions to ecosystem projects <br></br>
                         Strategic introductions to communties and thought leaders <br></br>
                         Influencer Partnerships <br></br>
                         Spaces and ecosystem podcasts setup <br></br>
@@ -35,8 +35,8 @@ export default function Growth(){
                         <img  src="/web.svg" />
                     </div>
                     <div className="ml-[20px]">
-                    <p className="text-white text-[16px] xl:text-[26px] md:text-[22px] font-semibold">Web3 Strategy</p>
-                    <p className="text-white text-[12px] md:text-[16px] md:leading-[30px] mt-[10px]"> 
+                    <p className="text-primary text-[16px] xl:text-[26px] md:text-[22px] font-semibold">Web3 Strategy</p>
+                    <p className="text-primary text-[12px] md:text-[16px] md:leading-[30px] mt-[10px]"> 
                         Art Design / Collection Strategy <br></br>
                         Develop Go-to-market strategy <br></br>
                         Processes Guidance <br></br>
@@ -53,8 +53,8 @@ export default function Growth(){
                         <img  src="/legalsetup.svg" />
                     </div>
                     <div className="ml-[20px]">
-                    <p className="text-white text-[16px] xl:text-[26px] md:text-[22px] font-semibold">Legal Setup</p>
-                    <p className="text-white text-[12px] md:text-[16px] md:leading-[30px] mt-[10px]"> 
+                    <p className="text-primary text-[16px] xl:text-[26px] md:text-[22px] font-semibold">Legal Setup</p>
+                    <p className="text-primary text-[12px] md:text-[16px] md:leading-[30px] mt-[10px]"> 
                         Setting up legal entities <br></br>
                         Creating employment contracts <br></br>
                         Creating buyer agreements <br></br>
@@ -69,8 +69,8 @@ export default function Growth(){
                         <img  src="/fundraising.svg" />
                     </div>
                     <div className="ml-[20px]">
-                    <p className="text-white text-[16px] xl:text-[26px] md:text-[22px] font-semibold">Fundraising</p>
-                    <p className="text-white text-[12px] md:text-[16px] md:leading-[30px] mt-[10px]"> 
+                    <p className="text-primary text-[16px] xl:text-[26px] md:text-[22px] font-semibold">Fundraising</p>
+                    <p className="text-primary text-[12px] md:text-[16px] md:leading-[30px] mt-[10px]"> 
                         Investor Introductions <br></br>
                         Pitch deck Creation <br></br>
                         Private Angel investors <br></br>
