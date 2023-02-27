@@ -8,7 +8,7 @@ export default function Growth(){
         <div>
             <div>
                 <h2 className="text-primary text-[60px] md:text-[120px] xl:text-[150px] xl:mb-[20px]">Growth</h2>
-                <p className="text-primary md:-mt-[50px] text-[12px] md:text-[22px] ">Growth is aimed to help you scale in web3</p>
+                <p className="text-primary md:-mt-[30px] -mt-[20px] text-[12px] md:text-[22px] ">Growth is aimed to help you scale in web3</p>
             </div>
 
             <div className="md:flex md:space-x-[60px] justify-center">

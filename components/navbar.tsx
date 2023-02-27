@@ -16,13 +16,27 @@ return classes.filter(Boolean).join(' ')
 
 export default function Example() {
     const [isShown,setIsShown] = useState(false);
+
+
+    // Disable scroll when navbar is open
+    if(isShown === true){
+        if (typeof window != 'undefined' && window.document) {
+            document.body.style.overflow = 'hidden';
+        }
+    } else {
+        if (typeof window != 'undefined' && window.document) {
+            document.body.style.overflow = 'unset';
+        }
+    }
+
+    
 return (
 <Disclosure as="nav">
     {({ open }) => (
     <>  
         <div className="pt-[50px] top-0 absolute w-full">
-        <div className="relative flex h-16 items-center justify-between mx-4 md:mx-[75px] xl:mx-[200px]">
-            <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+        <div className="relative flex h-16 items-center justify-between mx-4 xl:mx-[200px]">
+            <div className="absolute inset-y-0 left-0 flex items-center lg:hidden">
             {/* Mobile menu button*/}
             <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-primary">
                 <span className="sr-only">Open main menu</span>
@@ -35,16 +49,16 @@ return (
 
 
             </div>
-            <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between">
+            <div className="flex flex-1 items-center justify-center lg:items-stretch lg:justify-between">
             <div className="flex flex-shrink-0 items-center">
 
                 <img
-                className="hidden h-8 w-auto sm:block"
+                className="hidden h-8 w-auto lg:block"
                 src="/skyriselogo.svg"
                 alt="SkyRise"
                 />
             </div>
-            <div className="hidden sm:ml-6 sm:block">
+            <div className="hidden lg:ml-6 lg:block">
                 <div className="flex space-x-[50px]">
                 {navigation.map((item) => (
                     <a
@@ -57,7 +71,7 @@ return (
                 ))}
                 </div>
             </div>
-            <div className='sm:block hidden'>   
+            <div className='lg:block hidden'>   
                 <a className='font-[Elza] text-primary text-[16px]'>Contacts</a>
             </div>   
             </div>
@@ -73,8 +87,8 @@ return (
             leaveFrom=" scale-100"
             leaveTo="scale-0">
                 
-                <Disclosure.Panel className="sm:hidden w-screen h-screen absolute pt-[50px]">
-        <div className="flex flex-col space-y-[50px] px-2 pt-2 pb-3 justify-start items-center h-screen backdrop-blur-3xl">
+                <Disclosure.Panel className="lg:hidden w-screen h-screen absolute pt-[50px] backdrop-blur-3xl">
+        <div className="flex flex-col space-y-[50px] px-2 pt-2 pb-3 justify-start items-center h-screen ">
             <div className='flex'>
             <img
                 className="block h-8 w-auto lg:hidden"
@@ -94,7 +108,7 @@ return (
             </Disclosure.Button>
             ))}
             <Disclosure.Button>
-            <div className='sm:hidden block'>   
+            <div className='lg:hidden block'>   
                 <a className='font-[Elza] text-primary text-[16px]'>Contacts</a>
             </div>
             </Disclosure.Button>

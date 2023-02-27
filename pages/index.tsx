@@ -1,16 +1,12 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
-import Collaborations from '../components/collaborations'
-import Contact from '../components/contact'
+import Footer from '../components/footer'
 import Mouse from '../components/mouse'
 import Navbar from '../components/navbar'
 import NewServices from '../components/NewServices'
-import WhoWeAre from '../components/WhoWeAre'
 import SkyRise from '../components/skyrise'
-import Growth from '../components/Growth'
 import { useEffect, useState } from 'react'
-import About from '../components/WhoWeAre'
+import About from '../components/about'
 import Slider from '../components/slider'
 
 
@@ -49,7 +45,7 @@ const Home: NextPage = () => {
       <About></About>
       <Slider></Slider>
       <NewServices></NewServices>
-      <Contact></Contact>
+      <Footer></Footer>
       <div className='hidden md:block'>
         <Mouse></Mouse>
       </div>

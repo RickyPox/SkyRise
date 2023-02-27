@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/mouse.js", "components/WhoWeAre.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/mouse.js", "components/about.tsx"],
   "exclude": ["node_modules"]
 }

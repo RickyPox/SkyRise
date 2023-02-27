@@ -1,4 +1,5 @@
-import { TypeAnimation } from "react-type-animation"
+import { TypeAnimation } from "react-type-animation";
+import { motion } from "framer-motion";
 
 export default function SkyRise(){
 return(
@@ -26,7 +27,10 @@ return(
                 cursor={false}
                 />
             </div>
-            <button className='text-primary text-[18px]  px-[40px] py-[15px] rounded-[20px] border-[1px] border-white mt-[30px] mt-[120px]'>Make me Rise</button>
+            <motion.button
+            whileHover={{ backgroundColor:"#0D1520", color:"#FFFFFF" }}
+            transition={{ duration: 0.3 }}
+            className='text-primary text-[18px]  px-[40px] py-[15px] rounded-[20px] border-[1px] border-black mt-[120px]'>Make me Rise</motion.button>
         </div>
 
 )
