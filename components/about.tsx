@@ -27,9 +27,9 @@ return(
                 >
                     <Timeline
                     target={
-                        <video  className="-z-50 pt-[150px] " autoPlay loop muted id="placeholdervideo" src="/placeholdervideo.mp4"/>
+                        <video controls autoPlay loop muted id="skyRiseVideo" src="/skyRiseVideo.mp4"/>
                         }>
-                    <Tween from={{ width:"80%", x:200 }} to={{width:"100%", x:0}}/>
+                    <Tween from={{ width:"80%", x:200, className:"null pt-[150px] relative" }} to={{width:"100%", x:0, className:"active pt-[150px] relative"}}/>
                     </Timeline>
                     </Scene>
                 </Controller>

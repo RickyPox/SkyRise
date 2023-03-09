@@ -1,64 +1,63 @@
 
 
-export default function Tech(){
+export default function Branding(){
     return(
 
         <div className="mx-4 lg:mx-[60px] md:mx-[40px] xl:mx-[200px]">
-        {/* Tech  */}
+        {/* Branding  */}
         <div>
             <div>
-                <h2 className="text-primary text-[60px] md:text-[120px] xl:text-[150px] xl:mb-[20px]">Tech</h2>
-                <p className="text-primary md:-mt-[30px] -mt-[20px] text-[12px] md:text-[22px] w-1/2">Our Tech services are designed to provide you with the technical expertise you need to develop and maintain your web3 project.
-                <br></br>Our Tech branch includes:
+                <h2 className="text-primary text-[60px] md:text-[120px] xl:text-[150px] xl:mb-[20px]">Branding</h2>
+                <p className="text-primary md:-mt-[30px] -mt-[20px] text-[12px] md:text-[22px] w-1/2">Our Branding services are designed to help you build a strong, recognisable brand that resonates with your target audience.
+                    <br></br>Our Branding branch includes:
 
                 </p>
             </div>
 
             <div className="flex space-x-5 mt-[100px]">
 
-                {/* Web3 Development */}
+                {/* Branding Process */}
                 <div className="flex flex-col w-[300px] ">
                     <div className="flex items-center col-star-1 space-x-5 h-[80px]">
                         <div className="bg-black rounded-[5px] w-[50px] h-[50px] flex items-center justify-center">
-                            <img src="/web3development.svg"/>
+                            <img src="/branding.svg"/>
                         </div>
-                        <p className="text-primary text-[16px] xl:text-[26px] md:text-[22px] font-semibold">Web3 <br></br> Development</p>
+                        <p className="text-primary text-[16px] xl:text-[26px] md:text-[22px] font-semibold">Branding <br></br> Process</p>
                     </div>
                     <div className="ml-[70px]">
                         <p className="text-primary text-[12px] md:text-[16px] md:leading-[30px] mt-[10px]"> 
-                        We provide cutting-edge development services that enable you to build web3 applications that are fast, secure, and scalable.
+                            We help you define your brand's identity, including your messaging, values, and visual identity.
                         </p>
                     </div>
                 </div>
 
 
-                {/* Recruitment */}
+                {/* Web Design */}
                 <div className="flex flex-col w-[300px]">
                     <div className="flex items-center col-star-2 space-x-5 h-[80px]">
                         <div className="bg-black rounded-[5px] w-[50px] h-[50px] flex items-center justify-center">
-                            <img src="/recruitment.svg"/>
+                            <img src="/web.svg"/>
                         </div>
-                        <p className="text-primary text-[16px] xl:text-[26px] md:text-[22px] font-semibold">Recruitment</p>
+                        <p className="text-primary text-[16px] xl:text-[26px] md:text-[22px] font-semibold">Web <br></br> Design</p>
                     </div>
                     <div className="ml-[70px]">
                         <p className="text-primary text-[12px] md:text-[16px] md:leading-[30px] mt-[10px]"> 
-                            We help you find the best talent for your project, including developers, designers, and other key team members.
-
+                            We provide design services that ensure your web3 application is not only functional but also visually stunning.
                         </p>
                     </div>
                 </div>
 
-                {/* Tech Partnership*/}
+                {/* Assets Development */}
                 <div className="flex flex-col w-[300px]">
                     <div className="flex items-center col-star-3 space-x-5 h-[80px]">
                         <div className="bg-black rounded-[5px] w-[50px] h-[50px] flex items-center justify-center">
-                            <img src="/techpartnership.svg"/>
+                            <img src="/assets.svg"/>
                         </div>
-                        <p className="text-primary text-[16px] xl:text-[26px] md:text-[22px] font-semibold">Tech <br></br> Partnerships</p>
+                        <p className="text-primary text-[16px] xl:text-[26px] md:text-[22px] font-semibold">Assets <br></br> Development</p>
                     </div>
                     <div className="ml-[70px]">
                         <p className="text-primary text-[12px] md:text-[16px] md:leading-[30px] mt-[10px]"> 
-                            We connect you with industry-leading technology partners that can help you build and grow your project.
+                            We create high-quality assets that reflect your brand's identity, including logos, graphics, and other visual elements.
                         </p>
                     </div>
                 </div>

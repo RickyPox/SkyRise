@@ -1,18 +1,18 @@
 
-import Growth from "./Growth";
-import Identity from "./Identity";
+import Branding from "./Branding";
 import Tech from "./Tech";
 import { useEffect, useRef, useState } from 'react';
+import Incubation from "./Incubation";
 
 export default function NewServices(){ 
 
   const services = [
-    { name:'Growth', component: <Growth/> },
-    { name:'Identity', component: <Identity/> },
+    { name:'Incubation', component: <Incubation/> },
+    { name:'Branding', component: <Branding/> },
     { name:'Tech', component: <Tech/> },
   ];
   
-  const [selectedService, setSelectedService] = useState({ name: "Growth", component: <Growth/> });
+  const [selectedService, setSelectedService] = useState({ name: "Incubation", component: <Incubation/> });
   const selectService = (service: any) => {
     setSelectedService(service);
   };
@@ -20,7 +20,7 @@ export default function NewServices(){
   return (
     <div className="flex flex-col mt-[100px]">
       <div></div>
-      <h1 className='services_title text-primary mx-4 md:mx-[75px] xl:mx-[200px]overflow-x-hidden text-[40px] lg:text-[60px] xl:text-[68px] mb-[50px]'>Our services</h1>
+      <h1 className='services_title text-primary mx-4 md:mx-[75px] xl:mx-[200px] overflow-x-hidden text-[40px] lg:text-[60px] xl:text-[68px] mb-[50px]'>Our services</h1>
       <div className="flex justify-center space-x-4 md:space-x-8  xl:space-x-[50px] mb-[40px] lg:mb-[100px]">
         {services.map((service) => (
           <button

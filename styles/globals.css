@@ -83,3 +83,11 @@
   .services{
     scroll-snap-type: y mandatory;
   }
+
+  .null{
+    opacity: 0.2;
+  }
+
+  .active{
+    opacity: 1;
+  }
