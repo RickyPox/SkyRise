@@ -4,9 +4,8 @@ import { useState } from 'react';
 
 const navigation = [
 { name: 'Home', href: '#'},
-{ name: 'Our Mission', href: '#'},
 { name: 'Services', href: '#'},
-{ name: 'Our Reaches', href: '#'},
+{ name: 'Our Relationships', href: '#'},
 ]
 
 function classNames(...classes: String[]) {
@@ -88,10 +87,10 @@ return (
             leaveTo="scale-0">
                 
                 <Disclosure.Panel className="lg:hidden w-screen h-screen absolute pt-[50px] backdrop-blur-3xl">
-        <div className="flex flex-col space-y-[50px] px-2 pt-2 pb-3 justify-start items-center h-screen ">
+        <div className="flex flex-col space-y-[100px] px-2 pt-2 pb-3 justify-start items-center h-screen ">
             <div className='flex'>
             <img
-                className="block h-8 w-auto lg:hidden"
+                className="block h-[48px] w-auto lg:hidden"
                 src="/skyriselogo.svg"
                 alt="SkyRise"
                 />
@@ -101,7 +100,7 @@ return (
                 key={item.name}
                 as="a"
                 href={item.href}
-                className='font-[Elza] text-primary text-[16px]'
+                className='font-[Elza] text-primary text-[48px]'
             >
                 {item.name}
                 
@@ -109,7 +108,7 @@ return (
             ))}
             <Disclosure.Button>
             <div className='lg:hidden block'>   
-                <a className='font-[Elza] text-primary text-[16px]'>Contacts</a>
+                <a className='font-[Elza] text-primary text-[48px]'>Contacts</a>
             </div>
             </Disclosure.Button>
         </div>

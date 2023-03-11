@@ -21,7 +21,7 @@ return(
                 1000,
                 ]}
                 speed={40} // Custom Speed from 1-99 - Default Speed: 40
-                style={{ color:"white" }}
+                style={{ color:"black" }}
                 wrapper="p" // Animation will be rendered as a <span>
                 repeat={Infinity} // Repeat this Animation Sequence infinitely 
                 cursor={false}
@@ -30,7 +30,7 @@ return(
             <motion.button
             whileHover={{ backgroundColor:"#0D1520", color:"#FFFFFF" }}
             transition={{ duration: 0.3 }}
-            className='text-primary text-[18px]  px-[40px] py-[15px] rounded-[20px] border-[1px] border-black mt-[120px]'>Make me Rise</motion.button>
+            className='text-primary text-[18px]  px-[40px] py-[15px] rounded-[20px] border-[1px] border-black mt-[120px]'>Elevate Your Vision</motion.button>
         </div>
 
 )

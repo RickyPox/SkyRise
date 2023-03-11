@@ -7,13 +7,10 @@ export default function Incubation(){
         {/* Incubation  */}
         <div>
             <div>
-                <h2 className="text-primary text-[60px] md:text-[120px] xl:text-[150px] xl:mb-[20px]">Incubation</h2>
-                <p className="text-primary md:-mt-[30px] -mt-[20px] text-[12px] md:text-[22px] w-1/2">Our Incubation services are designed to provide you with the strategic support you need to launch and scale your web3 project. 
-                <br></br> Our Incubation branch includes:
-                </p>
+                <h2 className="text-primary text-[60px] md:text-[120px] xl:text-[150px] xl:mb-[20px]">Incubation</h2>             
             </div>
 
-            <div className="flex space-x-5 mt-[100px]">
+            <div className="flex flex-col md:flex-row space-y-5 md:space-y-0 md:space-x-5 mt-[100px]">
 
                 {/* Web3 Strategy */}
                 <div className="flex flex-col w-[300px] ">
