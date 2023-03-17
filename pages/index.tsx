@@ -58,7 +58,7 @@ const Home: NextPage = () => {
       <About></About>
       <Slider></Slider>
       <NewServices></NewServices>
-      <Footer></Footer>
+      <Footer></Footer> 
       <div className='hidden md:block'>
         <Mouse></Mouse>
       </div>

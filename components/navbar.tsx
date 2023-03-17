@@ -60,10 +60,10 @@ return (
             <div className="hidden lg:ml-6 lg:block">
                 <div className="flex space-x-[50px]">
                 {navigation.map((item) => (
-                    <a
+                    <a 
                     key={item.name}
                     href={item.href}
-                    className='font-[Elza] text-primary text-[16px] hover:bg-primary hover:text-white py-[10px] px-[20px] rounded-lg transition-all duration-150'
+                    className='font-[Elza] text-primary text-[16px]'
                     >
                     {item.name}
                     </a>
@@ -71,7 +71,7 @@ return (
                 </div>
             </div>
             <div className='lg:block hidden'>   
-                <a href="#contacts" className='font-[Elza] text-primary text-[16px]  hover:bg-primary hover:text-white py-[10px] px-[20px] rounded-lg transition-all duration-150'>Contact Us</a>
+                <a href="#contacts" className='font-[Elza] text-primary text-[16px]'>Contacts</a>
             </div>   
             </div>
         
@@ -97,10 +97,11 @@ return (
             </div>
             {navigation.map((item) => (
             <Disclosure.Button
+                onClick={() => setIsShown(!isShown)}
                 key={item.name}
                 as="a"
                 href={item.href}
-                className='font-[Elza] text-primary text-[48px]  hover:bg-primary hover:text-white py-[10px] px-[20px] rounded-lg transition-all duration-150'
+                className='font-[Elza] text-primary text-[32px]'
             >
                 {item.name}
                 
@@ -108,11 +109,14 @@ return (
             ))}
             <Disclosure.Button>
             <div className='lg:hidden block'>   
-                <a href="#contacts" className='font-[Elza] text-primary text-[48px]  hover:bg-primary hover:text-white py-[10px] px-[20px] rounded-lg transition-all duration-150'>Contacts Us</a>
+                <a
+                    onClick={() => setIsShown(!isShown)}
+                    href="#contacts" className='font-[Elza] text-primary text-[32px]'>Contacts</a>
             </div>
             </Disclosure.Button>
         </div>
         </Disclosure.Panel>
+
             </Transition>
     </>
     
