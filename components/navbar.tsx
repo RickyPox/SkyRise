@@ -3,9 +3,9 @@ import { Bars3Icon,  XMarkIcon } from '@heroicons/react/24/outline'
 import { useState } from 'react';
 
 const navigation = [
-{ name: 'Home', href: '#'},
-{ name: 'Services', href: '#'},
-{ name: 'Our Relationships', href: '#'},
+{ name: 'About', href: '#about'},
+{ name: 'Services', href: '#services'},
+{ name: 'Our Relationships', href: '#relationships'},
 ]
 
 function classNames(...classes: String[]) {
@@ -63,7 +63,7 @@ return (
                     <a
                     key={item.name}
                     href={item.href}
-                    className='font-[Elza] text-primary text-[16px]'
+                    className='font-[Elza] text-primary text-[16px] hover:bg-primary hover:text-white py-[10px] px-[20px] rounded-lg transition-all duration-150'
                     >
                     {item.name}
                     </a>
@@ -71,7 +71,7 @@ return (
                 </div>
             </div>
             <div className='lg:block hidden'>   
-                <a className='font-[Elza] text-primary text-[16px]'>Contacts</a>
+                <a href="#contacts" className='font-[Elza] text-primary text-[16px]  hover:bg-primary hover:text-white py-[10px] px-[20px] rounded-lg transition-all duration-150'>Contact Us</a>
             </div>   
             </div>
         
@@ -100,7 +100,7 @@ return (
                 key={item.name}
                 as="a"
                 href={item.href}
-                className='font-[Elza] text-primary text-[48px]'
+                className='font-[Elza] text-primary text-[48px]  hover:bg-primary hover:text-white py-[10px] px-[20px] rounded-lg transition-all duration-150'
             >
                 {item.name}
                 
@@ -108,12 +108,11 @@ return (
             ))}
             <Disclosure.Button>
             <div className='lg:hidden block'>   
-                <a className='font-[Elza] text-primary text-[48px]'>Contacts</a>
+                <a href="#contacts" className='font-[Elza] text-primary text-[48px]  hover:bg-primary hover:text-white py-[10px] px-[20px] rounded-lg transition-all duration-150'>Contacts Us</a>
             </div>
             </Disclosure.Button>
         </div>
         </Disclosure.Panel>
-
             </Transition>
     </>
     

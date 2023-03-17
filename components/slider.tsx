@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Marquee from "react-fast-marquee";
 
 
@@ -59,28 +59,44 @@ const carousel2  = [
     },
 ]
 
+
 export default function Slider(){
+
+    
+const [scrollSpeed, setScrollSpeed] = useState(0);
+
+useEffect(() => {
+    if(window.screen.width >= 768){
+    setScrollSpeed(50);
+    }
+    else{
+    setScrollSpeed(10);
+    }
+})
+
+
     return(
-    <div>     
-        <Marquee className='h-[200px] mb-[0px] '
+    <div id="relationships">     
+        <Marquee className='md:h-[200px] mb-[0px] overflow-y-hidden'
             gradient={false}
-            speed={50}>
-                <div className='flex flex-row w-full items-center'>
+            speed={scrollSpeed}
+        >
+                <div className='flex flex-row items-center justify-center justify-items-center'>
                     {carousel1.map((image) =>  (
-                        <div className='mx-[50px]'>
-                            <img src={image.imgsrc} />
+                        <div className='flex justify-center'>
+                            <img className='w-1/2 md:w-full md:mx-[50px]' src={image.imgsrc} />
                         </div>
                     ))}
                 </div>
         </Marquee>
-        <Marquee className='h-[200px] mb-[0px]'
+        <Marquee className='md:h-[200px] mb-[0px] overflow-y-hidden'
             gradient={false}
-            speed={50}
+            speed={scrollSpeed}
             direction="right">
-                <div className='flex flex-row w-full items-center'>
+                <div className='flex flex-row items-center justify-center justify-items-center'>
                     {carousel2.map((image) =>  (
-                        <div className='mx-[50px]'>
-                            <img src={image.imgsrc} />
+                        <div className='flex justify-center'>
+                            <img className='w-1/2 md:w-full md:mx-[50px]' src={image.imgsrc} />
                         </div>
                     ))}
                 </div>

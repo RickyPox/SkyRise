@@ -5,7 +5,7 @@ import { Tween, Timeline } from "react-gsap";
 
 export default function WhoWeAre(){
 return(
-    <div className="relative overflow-x-hidden">
+    <div className="relative overflow-x-hidden" id="about">
         <div className="absolute left-0 top-0 right-0 text-primary text-[40px] md:text-[80px] lg:text-[100px] xl:text-[150px] z-30 mx-auto w-4/5">
             <h2>
                 Building

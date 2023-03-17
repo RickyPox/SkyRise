@@ -9,7 +9,7 @@ return(
             <TypeAnimation
                 // Same String at the start will only be typed once, initially
                 sequence={[
-                'We Rise it',
+                'We Raise it',
                 1000,
                 'We Build it',
                 1000,

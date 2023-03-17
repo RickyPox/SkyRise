@@ -39,8 +39,8 @@ const Home: NextPage = () => {
           <motion.div 
           initial={{ opacity: 1 }}
           animate={{ opacity: 1 }}
-          exit={{ opacity:0 }}
-          transition={{ duration: 1.5, ease:"easeOut" }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.75, ease:"easeOut" }}
           className='w-screen h-screen flex' >
             <video className="w-screen h-screen object-cover" autoPlay muted id="LoadVideo" src="/loadingvideo.mp4"></video>
           </motion.div> )
@@ -50,8 +50,8 @@ const Home: NextPage = () => {
       <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          exit={{ opacity:0 }}
-          transition={{ duration: 1.5, ease:"easeOut" }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.75, ease:"easeOut" }}
       >
       <Navbar></Navbar>
       <SkyRise></SkyRise>

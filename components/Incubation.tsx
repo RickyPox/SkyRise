@@ -11,7 +11,7 @@ export default function Incubation(){
             </div>
 
             <div className="flex flex-col md:flex-row space-y-5 md:space-y-0 md:space-x-5 mt-[100px]">
-
+                
                 {/* Web3 Strategy */}
                 <div className="flex flex-col w-[300px] ">
                     <div className="flex items-center col-star-1 space-x-5 h-[80px]">
@@ -22,7 +22,10 @@ export default function Incubation(){
                     </div>
                     <div className="ml-[70px]">
                         <p className="text-primary text-[12px] md:text-[16px] md:leading-[30px] mt-[10px]"> 
-                            We help you define your project's value proposition and create a customized roadmap to guide your growth.
+                            Define your project's value proposition.
+                        </p>
+                        <p className="text-primary text-[12px] md:text-[16px] md:leading-[30px] mt-[10px]"> 
+                            Create a customized roadmap to guide your growth.
                         </p>
                     </div>
                 </div>
@@ -38,25 +41,15 @@ export default function Incubation(){
                     </div>
                     <div className="ml-[70px]">
                         <p className="text-primary text-[12px] md:text-[16px] md:leading-[30px] mt-[10px]"> 
-                            We connect you with industry-leading partners that can help you build and grow your project.
+                            Connect with industry leaders.
+                        </p>
+                        <p className="text-primary text-[12px] md:text-[16px] md:leading-[30px] mt-[10px]"> 
+                            Collaborate and propel your growth.
                         </p>
                     </div>
                 </div>
 
-                {/* Go-To Market */}
-                <div className="flex flex-col w-[300px]">
-                    <div className="flex items-center col-star-3 space-x-5 h-[80px]">
-                        <div className="bg-black rounded-[5px] w-[50px] h-[50px] flex items-center justify-center">
-                            <img src="/gotomarket.svg"/>
-                        </div>
-                        <p className="text-primary text-[16px] xl:text-[26px] md:text-[22px] font-semibold">Go-to <br></br> Market</p>
-                    </div>
-                    <div className="ml-[70px]">
-                        <p className="text-primary text-[12px] md:text-[16px] md:leading-[30px] mt-[10px]"> 
-                            We help you create a powerful go-to-market plan that will drive user adoption and engagement.
-                        </p>
-                    </div>
-                </div>
+                
 
                 {/* Fundraising */}
                 <div className="flex flex-col w-[300px]">
@@ -68,7 +61,7 @@ export default function Incubation(){
                     </div>
                     <div className="ml-[70px]">
                         <p className="text-primary text-[12px] md:text-[16px] md:leading-[30px] mt-[10px]"> 
-                            We help you secure funding from strategic investors that can help fuel your growth.
+                            Secure funds from premier investors.
                         </p>
                     </div>
                 </div>
@@ -83,7 +76,13 @@ export default function Incubation(){
                     </div>
                     <div className="ml-[70px]">
                         <p className="text-primary text-[12px] md:text-[16px] md:leading-[30px] mt-[10px]"> 
-                            We help you navigate complex regulatory frameworks and ensure compliance with all relevant laws and regulations.
+                            Navigate complex regulatory frameworks. 
+                        </p>
+                        <p className="text-primary text-[12px] md:text-[16px] md:leading-[30px] mt-[10px]"> 
+                            Register entity.
+                        </p>
+                        <p className="text-primary text-[12px] md:text-[16px] md:leading-[30px] mt-[10px]"> 
+                            Ensure compliance with all relevant laws and regulations.
                         </p>
                     </div>
                 </div>
