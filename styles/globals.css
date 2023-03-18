@@ -36,6 +36,7 @@
 
 *{
   cursor:none;
+
 }
 
   .navbar{
@@ -93,4 +94,17 @@
 
   .active{
     opacity: 1;
+  }
+
+
+  .service_desc{
+    font-size: calc(9px + (18 - 9) * ((100vw - 320px) / (768 - 320)));
+  }
+
+  .service_title{
+    font-size: calc(11px + (25 - 11) * ((100vw - 320px) / (768 - 320)));
+  }
+
+  .service_section{
+    font-size: calc(20px + (45 - 20) * ((100vw - 320px) / (768 - 320)));
   }

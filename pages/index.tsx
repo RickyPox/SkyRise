@@ -53,16 +53,18 @@ const Home: NextPage = () => {
           exit={{ opacity: 0 }}
           transition={{ duration: 0.75, ease:"easeOut" }}
       >
-      <Navbar></Navbar>
-      <SkyRise></SkyRise>
-      <About></About>
-      <Slider></Slider>
-      <NewServices></NewServices>
-      <Footer></Footer> 
-      <div className='hidden md:block'>
-        <Mouse></Mouse>
-      </div>
+
+          <Navbar></Navbar>
+          <SkyRise></SkyRise>
+          <About></About>
+          <Slider></Slider>
+          <NewServices></NewServices>
+          <Footer></Footer> 
+          <div className='hidden md:block'><Mouse></Mouse></div>
+
+
       </motion.div>
+      
 )
     }
     </div>

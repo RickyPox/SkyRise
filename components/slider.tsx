@@ -70,7 +70,7 @@ useEffect(() => {
     setScrollSpeed(50);
     }
     else{
-    setScrollSpeed(10);
+    setScrollSpeed(15);
     }
 })
 
@@ -84,7 +84,7 @@ useEffect(() => {
                 <div className='flex flex-row items-center justify-center justify-items-center'>
                     {carousel1.map((image) =>  (
                         <div className='flex justify-center'>
-                            <img className='w-1/2 md:w-full md:mx-[50px]' src={image.imgsrc} />
+                            <img className='w-1/2 md:w-full md:mx-[50px] mx-0' src={image.imgsrc} />
                         </div>
                     ))}
                 </div>
@@ -96,7 +96,7 @@ useEffect(() => {
                 <div className='flex flex-row items-center justify-center justify-items-center'>
                     {carousel2.map((image) =>  (
                         <div className='flex justify-center'>
-                            <img className='w-1/2 md:w-full md:mx-[50px]' src={image.imgsrc} />
+                            <img className='w-1/2 md:w-full md:mx-[50px] mx-0' src={image.imgsrc} />
                         </div>
                     ))}
                 </div>

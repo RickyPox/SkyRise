@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function SkyRise(){
 return(
-    <div className='min-h-screen flex flex-col items-center mx-4 md:mx-[75px] xl:mx-[200px] justify-center'>
+    <div className='min-h-screen flex flex-col items-center mx-4 md:mx-[75px] xl:mx-[150px] justify-center'>
         <img src="/skyrisenamedlogo.svg" ></img>
             <div className="mt-[50px]">
             <TypeAnimation

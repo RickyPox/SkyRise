@@ -19,9 +19,10 @@ export default function NewServices(){
   
   return (
     <div className="flex flex-col pt-[100px]" id="services">
-      <div></div>
-      <h1 className='services_title text-primary mx-4 md:mx-[75px] xl:mx-[200px] overflow-x-hidden text-[40px] lg:text-[60px] xl:text-[68px] mb-[50px]'>Our services</h1>
-      <div className="flex justify-center space-x-4 md:space-x-8  xl:space-x-[50px] mb-[40px] lg:mb-[100px]">
+      <h1 className='services_title text-primary mx-4 md:mx-[75px] xl:mx-[150px] overflow-x-hidden text-[20px] md:text-[45px] lg:text-[60px] xl:text-[68px] mb-[50px]'>Our services</h1>
+
+      {/* Bigger Screens */}
+      <div className="lg:flex justify-center space-x-4 md:space-x-8  xl:space-x-[50px] mb-[40px] lg:mb-[100px] hidden">
         {services.map((service) => (
           <button
             onClick={() => selectService(service)}
@@ -33,7 +34,28 @@ export default function NewServices(){
           </button>
         ))}
       </div>
-      {selectedService && selectedService.component}
+      <div className="lg:block hidden">
+        {selectedService && selectedService.component}
+      </div>
+
+
+
+      {/* Mobile */}
+      <div className="block lg:hidden">
+
+      <div className="h-screen">
+        <Incubation></Incubation>
+      </div>
+
+      <div className="h-screen">
+        <Marketing></Marketing>
+      </div>
+
+      <div className="h-screen">
+        <Tech></Tech>
+      </div>
+
+      </div>
     </div>
   );
 }

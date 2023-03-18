@@ -3,7 +3,6 @@ import { Bars3Icon,  XMarkIcon } from '@heroicons/react/24/outline'
 import { useState } from 'react';
 
 const navigation = [
-{ name: 'About', href: '#about'},
 { name: 'Services', href: '#services'},
 { name: 'Our Relationships', href: '#relationships'},
 ]
@@ -34,7 +33,7 @@ return (
     {({ open }) => (
     <>  
         <div className="pt-[50px] top-0 absolute w-full">
-        <div className="relative flex h-16 items-center justify-between mx-4 xl:mx-[200px]">
+        <div className="relative flex h-16 items-center justify-between mx-4 xl:mx-[150px]">
             <div className="absolute inset-y-0 left-0 flex items-center lg:hidden">
             {/* Mobile menu button*/}
             <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-primary">
@@ -63,7 +62,7 @@ return (
                     <a 
                     key={item.name}
                     href={item.href}
-                    className='font-[Elza] text-primary text-[16px]'
+                    className='font-[Elza] text-primary text-[16px] py-[10px] px-[20px] rounded-xl hover:bg-primary hover:text-white transition-all duration-300'
                     >
                     {item.name}
                     </a>
@@ -71,7 +70,7 @@ return (
                 </div>
             </div>
             <div className='lg:block hidden'>   
-                <a href="#contacts" className='font-[Elza] text-primary text-[16px]'>Contacts</a>
+                <a href="#contacts" className='font-[Elza] text-primary text-[16px] py-[10px] px-[20px] rounded-xl hover:bg-primary hover:text-white transition-all duration-300'>Contact Us</a>
             </div>   
             </div>
         
@@ -111,7 +110,7 @@ return (
             <div className='lg:hidden block'>   
                 <a
                     onClick={() => setIsShown(!isShown)}
-                    href="#contacts" className='font-[Elza] text-primary text-[32px]'>Contacts</a>
+                    href="#contacts" className='font-[Elza] text-primary text-[32px]'>Contact Us</a>
             </div>
             </Disclosure.Button>
         </div>
