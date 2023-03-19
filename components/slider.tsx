@@ -27,6 +27,7 @@ const carousel1  = [
     {
         imgsrc: "/slider/magiceden.png"
     },
+    
 ]
 
 const carousel2  = [
@@ -60,47 +61,40 @@ const carousel2  = [
 ]
 
 
+
+
 export default function Slider(){
-
-    
-const [scrollSpeed, setScrollSpeed] = useState(0);
-
-useEffect(() => {
-    if(window.screen.width >= 768){
-    setScrollSpeed(50);
-    }
-    else{
-    setScrollSpeed(15);
-    }
-})
 
 
     return(
-    <div id="relationships">     
+    <div id="relationships" className='pt-[50px]'>     
+
         <Marquee className='md:h-[200px] mb-[0px] overflow-y-hidden'
             gradient={false}
-            speed={scrollSpeed}
+            speed={50}
         >
                 <div className='flex flex-row items-center justify-center justify-items-center'>
                     {carousel1.map((image) =>  (
                         <div className='flex justify-center'>
-                            <img className='w-1/2 md:w-full md:mx-[50px] mx-0' src={image.imgsrc} />
+                            <img className='w-1/2 mx-[50px]' src={image.imgsrc} />
                         </div>
                     ))}
                 </div>
         </Marquee>
         <Marquee className='md:h-[200px] mb-[0px] overflow-y-hidden'
             gradient={false}
-            speed={scrollSpeed}
-            direction="right">
+            speed={50}
+            direction={"right"}
+            >
                 <div className='flex flex-row items-center justify-center justify-items-center'>
                     {carousel2.map((image) =>  (
                         <div className='flex justify-center'>
-                            <img className='w-1/2 md:w-full md:mx-[50px] mx-0' src={image.imgsrc} />
+                            <img className='w-1/2 mx-[50px]' src={image.imgsrc} />
                         </div>
                     ))}
                 </div>
         </Marquee>
+ 
     </div>
 )
 }

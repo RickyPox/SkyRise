@@ -27,12 +27,19 @@
 
   html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
 
   body{
     background-color: #FEFEFE;
     overflow-x: hidden;
   }
+  /* Hide Scroll */
+
+::-webkit-scrollbar {
+    display:none
+}
+
 
 *{
   cursor:none;
@@ -60,26 +67,6 @@
     font-style: normal;
   }
 
-  .services_title::before{
-    content: "02";
-    font-size: 16px;
-    vertical-align: 150%;
-    margin-right: 15px;
-    font-family: "elza", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-  .contact::before{
-    content: "04";
-    font-size: 16px;
-    vertical-align: 150%;
-    margin-right: 15px;
-    font-family: "elza", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-
   button{
     cursor: none;
   }
@@ -97,14 +84,47 @@
   }
 
 
-  .service_desc{
+  .section_text{
     font-size: calc(9px + (18 - 9) * ((100vw - 320px) / (768 - 320)));
   }
 
-  .service_title{
-    font-size: calc(11px + (25 - 11) * ((100vw - 320px) / (768 - 320)));
+  .section_title{
+    font-size: calc(35px + (65 - 35) * ((100vw - 320px) / (768 - 320)));
   }
 
   .service_section{
-    font-size: calc(20px + (45 - 20) * ((100vw - 320px) / (768 - 320)));
+    font-size: calc(25px + (55 - 25) * ((100vw - 320px) / (768 - 320)));
+  }
+
+  .service_name{
+    font-size: calc(11px + (25 - 11) * ((100vw - 320px) / (768 - 320)));
+  }
+
+  .twitter{
+    height: calc(15px + (30 - 15) * ((100vw - 320px) / (768 - 320)));
+    width: calc(15px + (30 - 15) * ((100vw - 320px) / (768 - 320)));
+  }
+
+.mouse{
+  display:none
+}
+
+  @media (pointer: fine) {
+    .mouse{
+      display: block
+    }
+  }
+
+
+  @media (max-width: 768px){
+    html{
+      overflow-y: scroll;
+      scroll-snap-type: y mandatory;
+      scroll-behavior: smooth;
+    }
+
+    
+  .scroll-snap-container > * {
+    scroll-snap-align: start;
+  }
   }

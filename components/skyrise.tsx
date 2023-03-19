@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export default function SkyRise(){
 return(
     <div className='min-h-screen flex flex-col items-center mx-4 md:mx-[75px] xl:mx-[150px] justify-center'>
-        <img src="/skyrisenamedlogo.svg" ></img>
+        <img className="md:w-[70%]" src="/skyrisenamedlogo.svg" ></img>
             <div className="mt-[50px]">
             <TypeAnimation
                 // Same String at the start will only be typed once, initially
@@ -27,10 +27,11 @@ return(
                 cursor={false}
                 />
             </div>
-            <motion.button
+            <motion.a 
             whileHover={{ backgroundColor:"#0D1520", color:"#FFFFFF" }}
             transition={{ duration: 0.3 }}
-            className='text-primary text-[18px]  px-[40px] py-[15px] rounded-[20px] border-[1px] border-black mt-[120px]'>Elevate Your Vision</motion.button>
+            href="https://calendly.com/skyriselabs" target="_blank"
+            className='section_text  md:text-[18px] px-[20px] md:px-[30px] py-[15px] rounded-[20px] border-[1px] border-primary mt-[120px]' >Elevate Your Vision</motion.a>
         </div>
 
 )
