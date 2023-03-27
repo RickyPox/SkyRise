@@ -20,7 +20,9 @@ export default function Intro() {
         <link rel="stylesheet" href="https://use.typekit.net/edg0nsn.css"/>
       </Head>
           <div className='w-screen h-screen flex' >
-            <video className="w-screen h-screen object-cover" autoPlay muted id="LoadVideo" src="/loadingvideo.mp4"></video>
+            <video className="w-screen h-screen object-cover" muted={true} autoPlay={true} playsInline={true}>
+              <source src="/loadingvideo.mp4"/>
+            </video>
           </div> 
     </div>
   )

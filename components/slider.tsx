@@ -4,10 +4,16 @@ import Marquee from "react-fast-marquee";
 
 const carousel1  = [
     {
-        imgsrc: "/slider/anybodies.png"
+        imgsrc: "/slider/anybodies.svg"
+    },
+    {
+        imgsrc: "/slider/aptos.svg"
     },
     {
         imgsrc: "/slider/blocksmithlabs.png"
+    },
+    {
+        imgsrc: "/slider/boringprotocol.svg"
     },
     {
         imgsrc: "/slider/brave.png"
@@ -22,15 +28,26 @@ const carousel1  = [
         imgsrc: "/slider/cupcake.png"
     },
     {
+        imgsrc: "/slider/econia.svg"
+    },
+    {
         imgsrc: "/slider/expopulus.png"
     },
     {
-        imgsrc: "/slider/magiceden.png"
+        imgsrc: "/slider/rove.svg"
     },
+
+
     
 ]
 
 const carousel2  = [
+    {
+        imgsrc: "/slider/madoath.svg"
+    },
+    {
+        imgsrc: "/slider/magiceden.png"
+    },
     {
         imgsrc: "/slider/masterblox.png"
     },
@@ -41,13 +58,16 @@ const carousel2  = [
         imgsrc: "/slider/ottersec.png"
     },
     {
+        imgsrc: "/slider/polygon.svg"
+    },
+    {
         imgsrc: "/slider/rooniverse.png"
     },
     {
-        imgsrc: "/slider/smyths.png"
+        imgsrc: "/slider/solana.png"
     },
     {
-        imgsrc: "/slider/solana.png"
+        imgsrc: "/slider/sui.svg"
     },
     {
         imgsrc: "/slider/svc.png"

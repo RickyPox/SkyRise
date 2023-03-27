@@ -3,6 +3,7 @@ import Tech from "./Tech";
 import { useEffect, useRef, useState } from 'react';
 import Incubation from "./Incubation";
 import Marketing from "./Marketing";
+import MoreServices from "./MoreServices";
 
 export default function Services(){ 
 
@@ -10,6 +11,7 @@ export default function Services(){
     { name:'Incubation', component: <Incubation/> },
     { name:'Marketing', component: <Marketing/> },
     { name:'Tech', component: <Tech/> },
+    { name:'More', component: <MoreServices/> },
   ];
   
   const [selectedService, setSelectedService] = useState({ name: "Incubation", component: <Incubation/> });
@@ -28,7 +30,7 @@ export default function Services(){
             onClick={() => selectService(service)}
             
             className={`rounded-[20px] font-[Elza] text-[12px] w-[75px] md:w-[180px] lg:w-[260px] xl:w-[300px] md:text-[26px]  xl:text-[40px] px-[20px] md:px-[30px] py-[15px] ${
-              selectedService.name == service.name ? 'bg-primary text-white' : 'bg-transparent text-primary border border-primary py-[5px] hover:bg-primary hover:text-white transition-all duration-300'}`}
+              selectedService.name == service.name ? 'bg-primary text-secondary' : 'bg-transparent text-primary border border-primary py-[5px] hover:bg-primary hover:text-secondary transition-all duration-300'}`}
           >
             {service.name}
           </button>

@@ -44,7 +44,7 @@ export default function Footer(){
                     <path d="M0 30.0106V41.2512H11.2498L30.005 22.5061L48.7502 41.2512H60V30.0014L29.9986 0L7.5008 22.5061L0 30.0106Z" fill="white"/>
                     <path d="M11.2507 7.50098H0V18.7517H11.2507V7.50098Z" fill="white"/>
                 </svg>
-                <p className="text-white text-[12px] text-center ">© SkyRise All Rights Reserved - 2023</p>
+                <p className="text-secondary text-[12px] text-center ">© SkyRise All Rights Reserved - 2023</p>
             </div>
         </div>
     )

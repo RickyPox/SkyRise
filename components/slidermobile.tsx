@@ -4,10 +4,16 @@ import Marquee from "react-fast-marquee";
 
 const carousel1  = [
     {
-        imgsrc: "/slider/mobile/anybodies.png"
+        imgsrc: "/slider/mobile/anybodies.svg"
+    },
+    {
+        imgsrc: "/slider/mobile/aptos.svg"
     },
     {
         imgsrc: "/slider/mobile/blocksmithlabs.png"
+    },
+    {
+        imgsrc: "/slider/mobile/boringprotocol.svg"
     },
     {
         imgsrc: "/slider/mobile/brave.png"
@@ -22,15 +28,25 @@ const carousel1  = [
         imgsrc: "/slider/mobile/cupcake.png"
     },
     {
+        imgsrc: "/slider/mobile/econia.svg"
+    },
+    {
         imgsrc: "/slider/mobile/expopulus.png"
     },
     {
-        imgsrc: "/slider/mobile/magiceden.png"
+        imgsrc: "/slider/rove.svg"
     },
+
     
 ]
 
 const carousel2  = [
+    {
+        imgsrc: "/slider/mobile/madoath.svg"
+    },
+    {
+        imgsrc: "/slider/mobile/magiceden.png"
+    },
     {
         imgsrc: "/slider/mobile/masterblox.png"
     },
@@ -41,13 +57,16 @@ const carousel2  = [
         imgsrc: "/slider/mobile/ottersec.png"
     },
     {
+        imgsrc: "/slider/mobile/polygon.svg"
+    },
+    {
         imgsrc: "/slider/mobile/rooniverse.png"
     },
     {
-        imgsrc: "/slider/mobile/smyths.png"
+        imgsrc: "/slider/mobile/solana.png"
     },
     {
-        imgsrc: "/slider/mobile/solana.png"
+        imgsrc: "/slider/mobile/sui.svg"
     },
     {
         imgsrc: "/slider/mobile/svc.png"
@@ -63,7 +82,7 @@ const carousel2  = [
 
 export default function SliderMobile(){
     return(
-    <div id="relationships" className='pt-[50px]'>  
+    <div id="relationships">  
 
         <Marquee className='md:h-[200px] h-[100px] mb-[0px] overflow-y-hidden'
             gradient={false}

@@ -62,7 +62,7 @@ return (
                     <a 
                     key={item.name}
                     href={item.href}
-                    className='font-[Elza] text-primary text-[16px] py-[10px] px-[20px] rounded-xl hover:bg-primary hover:text-white transition-all duration-300'
+                    className='font-[Elza] text-primary text-[16px] py-[10px] px-[20px] rounded-xl hover:bg-primary hover:text-secondary transition-all duration-300'
                     >
                     {item.name}
                     </a>
@@ -70,7 +70,7 @@ return (
                 </div>
             </div>
             <div className='md:block hidden'>   
-                <a href="#contacts" className='font-[Elza] text-primary text-[16px] py-[10px] px-[20px] rounded-xl hover:bg-primary hover:text-white transition-all duration-300'>Contact Us</a>
+                <a href="#contacts" className='font-[Elza] text-primary text-[16px] py-[10px] px-[20px] rounded-xl hover:bg-primary hover:text-secondary transition-all duration-300'>Contact Us</a>
             </div>   
             </div>
         

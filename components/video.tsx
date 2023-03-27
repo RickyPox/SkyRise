@@ -30,7 +30,7 @@ return(
                     >
                         <Timeline
                         target={
-                                <video controls autoPlay loop muted  src="/skyRiseVideo.mp4" />
+                                <video autoPlay loop muted  src="/skyRiseVideo.mp4" />
                             }>
                         <Tween from={{ scale:"0.8", className:"null pt-[50px] w-screen"}} to={{scale:"1", className:"active pt-[50px] w-screen"}}/>
                         </Timeline>

@@ -3,7 +3,7 @@ import {motion} from "framer-motion"
 
 
 
-export default function Mouse(){
+export default function Cursor(){
 
     const [mousePosition, setMousePosition] = useState({
         x:0,
@@ -32,10 +32,11 @@ const variants={
         y: mousePosition.y - 8,
         mixBlendMode: "difference"
     },
+    scrollCursor: {}
 
 }
     return(
-        <motion.div className="bg-white h-[16px] w-[16px] rounded-[50%] fixed top-0 left-0 pointer-events-none z-50"
+        <motion.div className="bg-white h-[16px] w-[16px] rounded-[100%] fixed top-0 left-0 pointer-events-none z-50"
         transition={{
             duration: 0,
             bounce: 0

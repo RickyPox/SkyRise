@@ -34,12 +34,11 @@
     background-color: #FEFEFE;
     overflow-x: hidden;
   }
-  /* Hide Scroll */
+  /* Scroll Customize */
 
 ::-webkit-scrollbar {
     display:none
 }
-
 
 *{
   cursor:none;
@@ -113,18 +112,4 @@
     .mouse{
       display: block
     }
-  }
-
-
-  @media (max-width: 768px){
-    html{
-      overflow-y: scroll;
-      scroll-snap-type: y mandatory;
-      scroll-behavior: smooth;
-    }
-
-    
-  .scroll-snap-container > * {
-    scroll-snap-align: start;
-  }
   }
