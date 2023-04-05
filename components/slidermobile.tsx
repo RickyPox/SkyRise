@@ -4,6 +4,9 @@ import Marquee from "react-fast-marquee";
 
 const carousel1  = [
     {
+        imgsrc: "/slider/mobile/atlas3.png"
+    },
+    {
         imgsrc: "/slider/mobile/anybodies.svg"
     },
     {
@@ -34,7 +37,7 @@ const carousel1  = [
         imgsrc: "/slider/mobile/expopulus.png"
     },
     {
-        imgsrc: "/slider/rove.svg"
+        imgsrc: "/slider/mobile/rove.svg"
     },
 
     

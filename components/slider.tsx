@@ -4,6 +4,9 @@ import Marquee from "react-fast-marquee";
 
 const carousel1  = [
     {
+        imgsrc: "/slider/atlas3.png"
+    },
+    {
         imgsrc: "/slider/anybodies.svg"
     },
     {
